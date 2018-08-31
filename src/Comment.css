@@ -1,0 +1,23 @@
+.box{
+    border: 1px solid black;
+    width: 30%;
+}
+
+li {
+    list-style-type: none;
+    margin: 3vh;
+}
+
+button {
+    margin: 5px;
+    width: 150px;
+    border: none;
+}
+
+.button_plus {
+    background-color: green;
+}
+
+.button_minus {
+    background-color: red;
+}

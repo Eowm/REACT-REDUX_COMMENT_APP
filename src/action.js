@@ -1,8 +1,8 @@
 import uuid from 'uuid';
 
 export const ADD_COMMENT = 'ADD_COMMENT';
-//export const REMOVE_COMMENT = 'REMOVE_COMMENT';
-//export const EDIT_COMMENT = 'EDIT_COMMENT';
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+export const EDIT_COMMENT = 'EDIT_COMMENT';
 export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
@@ -15,20 +15,20 @@ export const addComment = text => {
     }
 }
 
-/*export const removeComment = id => {
+export const removeComment = id => {
     return {
         type: 'REMOVE_COMMENT',
         id
     }
 }
 
-export const editComment = (text, id) => {
+export function editComment(id, text) {
     return {
-        type: 'EDIT_COMMENT',
+        type: EDIT_COMMENT,
         text,
         id
     }
-}*/
+}
 
 export function thumbUpComment(id) {
     return {

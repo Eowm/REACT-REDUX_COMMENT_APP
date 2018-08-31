@@ -8,8 +8,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { addComment } from './action';
 
-
-
 const store = createStore(reducer);
 
 ReactDOM.render(
